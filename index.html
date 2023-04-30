@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tugas 2</title>
-    <style type="text/css">
-      .content {
-        width: 50%;
-        height: 580px;
-        border: solid 1px black;
-        margin: auto;
-      }
-    </style>
-  </head>
-
-  <body>
+<head>
+	<title>Tugas2</title>
+	<style>
+		#content {
+			width: 50%;
+            height: 580px;
+            border: solid 1px black;
+			background-image: url("gambar1.jpg");
+			background-size: cover;
+            margin: auto;
+            text-align: center;
+		}
+	</style>
+</head>
+<body>
     <h1 style="text-align: center">Shuffle Image</h1>
-    <div class="content">
-    <script>
-		var kotak = document.getElementById("kotak");
+	<div id="content"></div>
+	<script>
+		var content = document.getElementById("content");
 		var gambar = 1;
 		setInterval(function() {
 			if (gambar == 1) {
-				kotak.style.backgroundImage = "url('gambar/g2.jpg')";
+				content.style.backgroundImage = "url('gambar/g2.jpg')";
 				gambar = 2;
 			} else if (gambar == 2) {
-				kotak.style.backgroundImage = "url('gambar/g3.jpg')";
+				content.style.backgroundImage = "url('gambar/g3.jpg')";
 				gambar = 3;
 			} else if (gambar == 3) {
-				kotak.style.backgroundImage = "url('gambar/g4.jpg')";
+				content.style.backgroundImage = "url('gambar/g4.jpg')";
 				gambar = 4;
 			} else if (gambar == 4) {
-				kotak.style.backgroundImage = "url('gambar/g5.jpg')";
+				content.style.backgroundImage = "url('gambar/g5.jpg')";
 				gambar = 5;
 			} else {
-				kotak.style.backgroundImage = "url('gambar/g1.jpg')";
+				content.style.backgroundImage = "url('gambar/g1.jpg')";
 				gambar = 1;
 			}
 		}, 4000);
 	</script>
-  </div>
-  </body>
+</body>
 </html>
+
