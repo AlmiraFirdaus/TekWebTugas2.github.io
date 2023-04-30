@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas2</title>
+	<style>
+		#content {
+			width: 50%;
+            height: 580px;
+            border: solid 1px black;
+            margin: auto;
+            text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <h1 style="text-align: center">Shuffle Image</h1>
+	<div id="content"></div>
+	<script>
+		var content = document.getElementById("content");
+		var gambar = 1;
+		setInterval(function() {
+			if (gambar == 1) {
+				content.style.backgroundImage = "url('gambar/g2.jpg')";
+				gambar = 2;
+			} else if (gambar == 2) {
+				content.style.backgroundImage = "url('gambar/g3.jpg')";
+				gambar = 3;
+			} else if (gambar == 3) {
+				content.style.backgroundImage = "url('gambar/g4.jpg')";
+				gambar = 4;
+			} else if (gambar == 4) {
+				content.style.backgroundImage = "url('gambar/g5.jpg')";
+				gambar = 5;
+			} else {
+				content.style.backgroundImage = "url('gambar/g1.jpg')";
+				gambar = 1;
+			}
+		}, 4000);
+	</script>
+</body>
+</html>
